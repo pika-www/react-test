@@ -1,0 +1,12 @@
+.password-input {
+  form {
+    max-width: 400px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    input {
+      height: 100%;
+    }
+  }
+}

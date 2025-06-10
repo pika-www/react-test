@@ -1,0 +1,24 @@
+/* 全局颜色改变 */
+:root {
+  --primary-color: #0070f3;
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+html[data-theme="dark"] {
+  --primary-color: #000000;
+  --background-color: #121212;
+  --text-color: #ffffff;
+}
+
+html[data-theme="light"] {
+  --primary-color: #fff;
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+html {
+  width: 100vw;
+  height: 1000vh;
+  background-color: var(--text-color);
+}
