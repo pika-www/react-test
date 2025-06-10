@@ -46,7 +46,7 @@ export default function Home() {
     <div>
       <h1 style={{ color: "var(--primary-color)" }}>Hello world</h1>
       <button onClick={openUserInfo}>获取用户信息</button>
-      {isLogin ? <h1 style={{color:'var(--primary-color)'}}>已登录</h1> : <h1 style={{color:'var(--primary-color)'}}>未登录</h1>}
+      <h1 style={{color:'var(--primary-color)'}}>{isLogin ? "已登录" : "未登录"}</h1>
       {isLogin ? (
         <div>
           <h2>用户信息：</h2>

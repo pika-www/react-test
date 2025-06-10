@@ -51,8 +51,6 @@ class Request {
     this.instance.interceptors.request.use(
       (config) => {
         this.handleRequest(config);
-  
-        // ✅ 动态添加 Authorization 头
         const token = localStorage.getItem("token");
         if (token) {
           config.headers["Authorization"] = `Bearer ${token}`;
